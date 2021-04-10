@@ -1,9 +1,15 @@
-window.addEventListener('load', () => {
-    const preload = document.querySelector('.preloader');
-    preload.classList.add('finishPreload');
+window.addEventListener('load', (e) => {
+    // finish preloader
+    addClasstoSelector('.preloader', 'finishPreload');
+
+    // finish intro
+    addClasstoSelector('.welcome', 'readyToAnimation');
 });
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    console.log("DOM fully loaded and parsed");
-});
+
+
+function addClasstoSelector(element, className) {
+    const elem = document.querySelector(element);   
+    elem.classList.add(className);
+}
 
