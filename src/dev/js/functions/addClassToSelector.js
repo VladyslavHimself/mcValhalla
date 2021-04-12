@@ -3,6 +3,5 @@ function addClassToSelector(element, className) {
     elem.classList.add(className);
 }
 
-
 export default addClassToSelector;
 
