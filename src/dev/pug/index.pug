@@ -7,18 +7,24 @@ html(lang="en")
 
         link(rel="stylesheet", href="dist/css/normalize.css")
         link(rel="stylesheet", href="dist/css/main.css")
+        //- script(defer src="dist/bundle.js")
         
-    body
+    body(data-barba="wrapper")
+        .master( data-barba="container" data-barba-namespace="home" )
 
-        .preloader
-            .loader
-            .preloader__text Please wait...
+            .preloader
+                .loader
+                .preloader__text Please wait...
+            
+            .intro
+                .welcome
+                    .welcome__heading Valhalla
+                    .welcome__description Minecraft server complex
+                    a(href="html/home.html").button Ввойти в Вальхаллу
+
+        script(src="dist/bundle.js")
         
-        .intro
-            .welcome
-                .welcome__heading Valhalla
-                .welcome__description Minecraft server complex
+        
 
-
-        script(src="dist/script.js")
+        
         

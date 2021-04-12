@@ -8,10 +8,10 @@
 }
 .welcome {
     
-    
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     color: #000;
     filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.25));
@@ -56,13 +56,27 @@
 @keyframes fadeOutIn {
     0% {
         opacity: 0;
-    } 50% {
-        opacity: 1;
     } 100% {
-        opacity: 0;
+        opacity: 1;
     }
 }
 
 .readyToAnimation {
-    animation: fadeOutIn 3s ease-in-out forwards;
+    animation: fadeOutIn 4s ease-in-out forwards;
+}
+
+.button {
+    
+    width: 250px;
+    height: 50px;
+    
+    margin-top: 20px;
+
+    background-color: $mColor;
+
+    @include fCentered;
+
+    color: #fff;
+    text-decoration: none;
+    
 }

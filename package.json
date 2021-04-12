@@ -1,18 +1,28 @@
 {
-  "name": "portfolio",
+  "name": "mcvalhalla",
   "version": "1.0.0",
-  "description": "Simple Portolio",
+  "description": "Site for minecraft server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "webpack"
   },
-  "author": "vHimself <vladyslavhimself@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladyslavHimself/mcValhalla.git"
+  },
+  "author": "VladyslavHimself <vladyslavhimself@gmail.com>",
   "license": "ISC",
-  "devDependencies": {
-    "webpack": "^5.20.1",
-    "webpack-cli": "^4.5.0"
+  "bugs": {
+    "url": "https://github.com/VladyslavHimself/mcValhalla/issues"
   },
+  "homepage": "https://github.com/VladyslavHimself/mcValhalla#readme",
   "dependencies": {
-    "@barba/core": "^2.9.7"
+    "@barba/core": "^2.9.7",
+    "gsap": "^3.6.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
   }
 }
