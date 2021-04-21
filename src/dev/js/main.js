@@ -21,6 +21,9 @@ barba.hooks.afterEnter((data) => {
         addClassToSelector('.preloader', 'finishPreload');
         addClassToSelector('.welcome', 'readyToAnimation');
     }
-
+    
+    // let burger = document.querySelector('.burger');
+    //     burger.addEventListener('click', function(e) {
+    //     burger.classList.toggle('active');
 });
 

@@ -20,7 +20,22 @@ html(lang="en")
                 include includes/_burger.pug
 
             .main
-                
+                .heading
+                    h2 Welcome, Friend!
+                .informationRow
+                    .serverInfo
+                        .serverInfo__header Servers
+                        .serverInfo__content
+                            .serverInfo__tags
+                                .serverInfo__name TeaParty
+                                .serverInfo__tag Active
+                            .serverInfo__progressBar
+                            .serverInfo__playerInfo
+                                .serverInfo__activeUsers 20
+                                p /
+                                .serverInfo__maxOnline 40
+
+
 
             
     script(src="../dist/bundle.js")
