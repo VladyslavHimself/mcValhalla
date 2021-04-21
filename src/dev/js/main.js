@@ -14,11 +14,13 @@ window.addEventListener('load', (e) => {
 });
 
 
+
 barba.hooks.afterEnter((data) => {
 
     if (data.next.url.href.match('/index.html')) {
         addClassToSelector('.preloader', 'finishPreload');
         addClassToSelector('.welcome', 'readyToAnimation');
     }
-    
+
 });
+

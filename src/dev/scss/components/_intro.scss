@@ -64,19 +64,3 @@
 .readyToAnimation {
     animation: fadeOutIn 4s ease-in-out forwards;
 }
-
-.button {
-    
-    width: 250px;
-    height: 50px;
-    
-    margin-top: 20px;
-
-    background-color: $mColor;
-
-    @include fCentered;
-
-    color: #fff;
-    text-decoration: none;
-    
-}

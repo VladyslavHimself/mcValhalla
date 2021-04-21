@@ -11,9 +11,16 @@ html(lang="en")
     body(data-barba="wrapper")
 
         .master( data-barba="container" data-barba-namespace="home" )
-            h1 hello uyobish4e!
-            a(href="../index.html") here
-            
+            .header
+                a(href="https://discord.gg/xtvKakfBzZ" target="_blank").button.discord Join Discord
+                a(href="https://discord.gg/xtvKakfBzZ" target="_blank").header__alt
+                    img(src="../dist/assets/discord.svg", alt="", srcset="")
+                .header__logo Valhalla
+                    
+                include includes/_burger.pug
+
+            .main
+                
 
             
     script(src="../dist/bundle.js")
