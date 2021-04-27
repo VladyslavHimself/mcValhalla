@@ -18,20 +18,32 @@
           <h2>Welcome, Friend!</h2>
         </div>
         <div class="informationRow">
-          <div class="serverInfo">
-            <div class="serverInfo__header">Servers</div>
-            <div class="serverInfo__content">
-              <div class="serverInfo__tags">
-                <div class="serverInfo__name">TeaParty</div>
-                <div class="serverInfo__tag">Active</div>
-              </div>
-              <div class="serverInfo__progressBar"></div>
-              <div class="serverInfo__playerInfo">
-                <div class="serverInfo__activeUsers">20</div>
-                <p>/</p>
-                <div class="serverInfo__maxOnline">40</div>
+          <div class="monitoring">
+            <div class="infoBlock">
+              <div class="infoBlock__title">Servers</div>
+              <div class="server">
+                <div class="server__name">TeaParty</div>
+                <div class="progressBar">
+                  <div class="progressBar__active"></div>
+                  <div class="progressBar__overall"></div>
+                </div>
+                <div class="serverStat">
+                  <div class="serverStat__active">12</div>
+                  <div class="serverStat__hyphen">/</div>
+                  <div class="serverStat__overall">40</div>
+                </div>
               </div>
             </div>
+            <div class="infoBlock">
+              <div class="infoBlock__title">About Valhalla</div>
+              <div class="infoBlock__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit atque distinctio aliquid voluptas nemo numquam fuga qui, facilis provident iusto ipsam molestiae quam sapiente reiciendis, quidem veniam! Dolorum nemo maiores dolorem voluptatem corporis nisi optio?</div>
+              <div class="infoBlock__image"><img src="../dist/assets/viking.png" alt="" srcset=""/></div>
+            </div>
+          </div>
+        </div>
+        <div class="playButton">
+          <div class="playButton__content"><a class="button button-alternate" href="#">Start play on Teaparty</a>
+            <div class="playButton__description">mc.teaparty.fun</div>
           </div>
         </div>
       </div>

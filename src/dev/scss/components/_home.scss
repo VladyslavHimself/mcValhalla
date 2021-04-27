@@ -1,0 +1,214 @@
+.main {
+    
+    margin-top: 45px;
+}
+.heading {
+
+    @include fCentered;
+
+    &::after {
+        
+        content: '';
+
+        top: 0;
+        left: 0;
+        
+        position: absolute;
+        
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+
+        z-index: -1;
+
+        mix-blend-mode: lighten;
+    }
+
+    position: relative;
+    z-index: 2;
+    background: url('../assets/background.png') center center/cover;
+    
+    width: 830px;
+    height: 300px;
+
+    h2 {
+
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 90px;
+        text-align: center;
+
+        color: #fff;
+    }
+}
+.informationRow {
+    display: flex;
+    width: 830px;
+
+}
+.monitoring {
+    
+    margin-top: 18px;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+		&__header {
+		}
+}
+.infoBlock {
+        background: #E4E4E4;
+        width: 409px;
+        height: 315px;
+
+        @include fCentered;
+        flex-direction: column;
+        
+        position: relative;
+
+
+		&__title {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -5%);
+            
+            // font settings
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+		}
+
+		&__description {
+            text-align: center;
+            max-width: 330px;
+		}
+
+		&__image {
+            margin-top: 16px;
+            width: 83px;
+            height: 64px;
+            
+            img {
+                width: inherit;
+                height: inherit;
+                mix-blend-mode: multiply;
+            }
+		}
+}
+
+.server {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    &__name {
+        margin-bottom: 11px;
+
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+.progressBar {
+
+    
+
+    width: 350px;
+    height: $progressBarHeight;
+    
+    display: flex;
+    
+    position: relative;
+
+		&__active {
+            position: absolute;
+            width: 40%;
+            height: $progressBarHeight;
+
+            background: $mLight;
+		}
+
+		&__overall {
+            background: #333;
+            width: 100%;
+            height: $progressBarHeight;
+		}
+}
+.serverStat {
+
+    display: flex;
+    
+    margin-top: 11px;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+
+		&__active {
+            color: $mColor;
+		}
+
+		&__hyphen {
+            margin: 0px 5px;
+		}
+
+		&__overall {
+		}
+}
+
+// play button
+
+.playButton {
+    width: 830px;
+    height: 200px;
+
+    @include fCentered;
+
+    background: #137753;
+    box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.1);
+    &__content {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .button {
+            width: 535px;
+        }
+
+        .button-alternate {
+            
+            color: $mColor;
+            background-color: #f4f4f4;
+
+            &:hover {
+                color: #000;
+                background-color: rgb(243, 243, 243);
+            }
+        }
+
+    }
+
+    &__description {
+        color: #fff;
+        margin-top: 15px;
+    }
+
+    margin: 20px 0px;
+}
+.button {
+}
