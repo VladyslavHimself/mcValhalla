@@ -1,0 +1,14 @@
+.navigation {
+    
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transform: translate(0, 0);
+    z-index: 999;
+
+    width: 400px;
+    min-height: 100vh;
+
+    transition: .6s ease;
+    background-color: #ccc;
+}

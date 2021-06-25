@@ -21,9 +21,16 @@ barba.hooks.afterEnter((data) => {
         addClassToSelector('.preloader', 'finishPreload');
         addClassToSelector('.welcome', 'readyToAnimation');
     }
-    
-    // let burger = document.querySelector('.burger');
-    //     burger.addEventListener('click', function(e) {
-    //     burger.classList.toggle('active');
-});
 
+    if (data.next.url.href.match('./html/home.html')) {
+
+        const burger = document.querySelector('.burger'),
+              navigation = document.querySelector('.navigation');
+        
+              // navigation
+            burger.addEventListener('click', () => {
+                navigation.style.transform = 'translate(-100%, 0)';
+            })
+    }
+    
+});

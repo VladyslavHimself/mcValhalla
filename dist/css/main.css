@@ -167,6 +167,7 @@
 }
 
 .burger {
+  cursor: pointer;
   transform: translate(10%, 15%);
 }
 .burger span {
@@ -339,6 +340,18 @@
 .playButton__description {
   color: #fff;
   margin-top: 15px;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  transform: translate(0, 0);
+  z-index: 999;
+  width: 400px;
+  min-height: 100vh;
+  transition: 0.6s ease;
+  background-color: #ccc;
 }
 
 * {
