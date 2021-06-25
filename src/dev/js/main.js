@@ -30,6 +30,7 @@ barba.hooks.afterEnter((data) => {
               // navigation
             burger.addEventListener('click', () => {
                 navigation.style.transform = 'translate(-100%, 0)';
+                
             })
     }
     
