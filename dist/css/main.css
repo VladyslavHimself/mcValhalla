@@ -346,12 +346,40 @@
   position: fixed;
   top: 0;
   left: 100%;
-  transform: translate(0, 0);
+  transform: translate(0%, 0);
   z-index: 999;
   width: 400px;
   min-height: 100vh;
   transition: 0.6s ease;
   background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation__list a {
+  text-decoration: none;
+  color: #000;
+}
+.navigation__item {
+  cursor: pointer;
+  margin: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+.navigation__item:hover {
+  color: #137753;
+}
+.navigation .activeTab {
+  color: #137753;
+}
+.navigation__close {
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  transform: translate(-90%, -5%);
 }
 
 * {

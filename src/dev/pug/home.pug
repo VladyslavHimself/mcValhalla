@@ -13,6 +13,19 @@ html(lang="en")
         
         .master( data-barba="container" data-barba-namespace="home" )
             .navigation
+                .navigation__close
+                    img(src="../dist/assets/close.svg", alt="", srcset="")
+                .navigation__list
+                    
+                    a(href="#")
+                        .navigation__item.activeTab Home
+                    a(href="#")
+                        .navigation__item About
+                    a(href="#")
+                        .navigation__item Team
+                    a(href="#")
+                        .navigation__item Join
+                    
             .header
                 a(href="https://discord.gg/xtvKakfBzZ" target="_blank").button.discord Join Discord
                 a(href="https://discord.gg/xtvKakfBzZ" target="_blank").header__alt

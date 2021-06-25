@@ -32,6 +32,11 @@ barba.hooks.afterEnter((data) => {
                 navigation.style.transform = 'translate(-100%, 0)';
                 
             })
+
+            document.querySelector('.navigation__close').addEventListener('click', () => {
+                navigation.style.transform = 'translate(0%, 0%)';
+            })
+
     }
     
 });
