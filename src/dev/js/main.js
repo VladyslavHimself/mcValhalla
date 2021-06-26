@@ -37,6 +37,25 @@ barba.hooks.afterEnter((data) => {
                 navigation.style.transform = 'translate(0%, 0%)';
             })
 
+
+            const textIp = "mc.teaparty.fun";
+            const playButton = document.querySelector('.playButton');
+    
+            playButton.addEventListener('click', () => {
+                navigator.clipboard.writeText(textIp).then(function() {
+                    document.getElementById('btnText').innerHTML = 'IP COPIED TO CLIPBOARD!';
+                    setTimeout(() => {
+                        document.getElementById('btnText').innerHTML = 'Start play on Teaparty';
+                    }, 3000);
+                    console.log('Succesfully');
+                }, function(err) {
+                    console.error('Async: Could not copy text: ', err);
+                });
+            });
+    
+
+
     }
     
 });
+
