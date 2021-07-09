@@ -177,34 +177,6 @@
   background-color: #000;
 }
 
-@media (max-width: 768px) {
-  .header__logo {
-    transform: translateX(-5%);
-  }
-}
-@media (max-width: 620px) {
-  .header__logo {
-    transform: translateX(0%);
-  }
-  .header .button {
-    display: none;
-  }
-  .header__alt {
-    display: block;
-  }
-}
-@media (max-width: 320px) {
-  .header__logo {
-    font-size: 1.5rem;
-    transform: translateX(10%);
-  }
-  .header .button {
-    display: none;
-  }
-  .header__alt {
-    display: block;
-  }
-}
 .main {
   margin-top: 45px;
 }
@@ -457,9 +429,107 @@ body {
   transform: rotate(-45deg) translateX(51px) translateY(-50px);
 }
 
+@media (max-width: 768px) {
+  .header {
+    margin-top: 0;
+  }
+  .header__logo {
+    transform: translateX(-5%);
+  }
+}
+@media (max-width: 620px) {
+  .header__logo {
+    transform: translateX(0%);
+  }
+  .header .button {
+    display: none;
+  }
+  .header__alt {
+    display: block;
+  }
+}
 @media screen and (max-width: 375px) {
   .welcome__heading {
     font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .header__logo {
+    font-size: 1.5rem;
+    transform: translateX(10%);
+  }
+  .header .button {
+    display: none;
+  }
+  .header__alt {
+    display: block;
+  }
+}
+@media (max-width: 850px) {
+  .heading {
+    width: 95vw;
+  }
+
+  .informationRow {
+    width: 100%;
+  }
+
+  .monitoring {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .monitoring .infoBlock {
+    min-width: 100%;
+  }
+
+  .infoBlock {
+    margin-bottom: 25px;
+  }
+  .infoBlock:nth-child(1) {
+    height: 100px;
+  }
+  .infoBlock:nth-child(1) .infoBlock__title {
+    display: none;
+  }
+
+  .playButton {
+    width: 95vw;
+  }
+  .playButton__content {
+    width: 320px;
+  }
+  .playButton a {
+    width: inherit !important;
+  }
+}
+@media (max-width: 425px) {
+  .infoBlock {
+    width: 100%;
+  }
+
+  .server .progressBar {
+    width: 290px;
+  }
+}
+@media (max-width: 375px) {
+  .heading h2 {
+    font-size: 3.75rem;
+  }
+
+  .infoBlock {
+    width: 100px;
+  }
+  .infoBlock:nth-child(2) {
+    justify-content: flex-end;
+    height: 320px;
+  }
+  .infoBlock__image {
+    margin-top: 30px;
+  }
+
+  .playButton__content {
+    width: 250px;
   }
 }
 /*# sourceMappingURL=main.css.map */
