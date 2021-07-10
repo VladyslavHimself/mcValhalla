@@ -9,6 +9,7 @@
 
 @import 'components/home';
 
+@import 'components/navigation';
 // general support styles
 
 * {
@@ -18,7 +19,11 @@
     padding: 0;
 
     &::selection {
+<<<<<<< HEAD
       background-color: rgba($mLight, 0.8);
+=======
+      background-color: rgba($mLight, 0.6);
+>>>>>>> clipboardipbutton
     }
 }
 

@@ -92,15 +92,8 @@
 
     .playButton {
         width: 95vw;
-
-        &__content {
-            width: 320px;
-
-        }
-
-        a {
-            width: inherit !important;
-        }
+        &__content { width: 320px; }
+        a { width: inherit !important; }
     }
 }
 
@@ -142,7 +135,5 @@
             width: 250px;
         }
     }
-
-
 }
 
