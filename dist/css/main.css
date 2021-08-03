@@ -389,11 +389,7 @@
   padding: 0;
 }
 *::selection {
-<<<<<<< HEAD
-  background-color: rgba(31, 185, 129, 0.8);
-=======
   background-color: rgba(31, 185, 129, 0.6);
->>>>>>> clipboardipbutton
 }
 
 body {
