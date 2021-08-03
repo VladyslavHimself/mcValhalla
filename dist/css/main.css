@@ -342,6 +342,30 @@
   margin-top: 15px;
 }
 
+.aboutProject {
+  max-width: 830px;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #137753;
+  box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.1);
+  color: #f4f4f4;
+  font-weight: 200;
+}
+.aboutProject__header h2 {
+  font-weight: 200;
+  font-size: 28px;
+}
+.aboutProject__desc {
+  max-width: 600px;
+  text-align: center;
+}
+.aboutProject .playButton__content-reversed {
+  flex-direction: column-reverse;
+}
+
 .navigation {
   position: fixed;
   top: 0;
@@ -394,6 +418,12 @@
 
 body {
   background-color: #f4f4f4;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .master {
@@ -544,6 +574,17 @@ body {
     width: inherit !important;
   }
 }
+@media (max-width: 650px) {
+  .aboutProject__header h2 {
+    padding-top: 20px;
+    font-weight: normal;
+    font-size: 18px;
+  }
+  .aboutProject__desc {
+    font-size: 14px;
+    max-width: 375px;
+  }
+}
 @media (max-width: 425px) {
   .infoBlock {
     width: 100%;
@@ -571,6 +612,16 @@ body {
 
   .playButton__content {
     width: 250px;
+  }
+
+  .aboutProject__header h2 {
+    padding-top: 20px;
+    font-weight: normal;
+    font-size: 18px;
+  }
+  .aboutProject__desc {
+    font-size: 14px;
+    max-width: 310px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -98,6 +98,24 @@
 }
 
 
+@media (max-width: 650px) {
+    .aboutProject {
+
+        &__header {
+            h2 {
+                padding-top: 20px;
+                font-weight: normal;
+                font-size: 18px;
+            }
+        }
+
+        &__desc {
+            font-size: 14px;
+            max-width: 375px;
+        }
+    }
+}
+
 @media (max-width: 425px) {
     .infoBlock {
         width: 100%;
@@ -133,6 +151,25 @@
     .playButton {
         &__content {
             width: 250px;
+        }
+    }
+
+
+    // !! about
+
+    .aboutProject {
+
+        &__header {
+            h2 {
+                padding-top: 20px;
+                font-weight: normal;
+                font-size: 18px;
+            }
+        }
+
+        &__desc {
+            font-size: 14px;
+            max-width: 310px;
         }
     }
 }

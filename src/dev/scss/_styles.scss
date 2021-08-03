@@ -9,6 +9,8 @@
 
 @import 'components/home';
 
+@import 'components/about';
+
 @import 'components/navigation';
 // general support styles
 
@@ -29,6 +31,12 @@ body {
 
 // 
 
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .master {
     width: 100%;

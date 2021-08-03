@@ -1,0 +1,36 @@
+.aboutProject {
+
+    max-width: 830px;
+    height: 450px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #137753;
+    box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.1);
+
+    color: #f4f4f4;
+    font-weight: 200;
+
+    &__header {
+        h2 {
+            font-weight: 200;
+            font-size: 28px;
+        }
+    }
+
+    &__desc {
+        max-width: 600px;
+        text-align: center;
+    }
+
+    &__logo {
+
+    }
+
+    .playButton__content-reversed {
+        flex-direction: column-reverse;
+    }
+}
