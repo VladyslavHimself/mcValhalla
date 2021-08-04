@@ -1,4 +1,7 @@
+// npm resources
 import barba from '@barba/core';
+
+// external resources
 import './functions/barboss';
 
 const { default: addClassToSelector } = require('./functions/addClassToSelector');
@@ -43,8 +46,7 @@ function copyIpFromButton() {
   });
 }
 
-
-barba.hooks.afterEnter((data) => {
+barba.hooks.after((data) => {
   // reload scripts after refreshing data
   if (data.next.url.href.match('/index.html')) {
     addClassToSelector('.preloader', 'finishPreload');
