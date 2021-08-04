@@ -366,6 +366,46 @@
   flex-direction: column-reverse;
 }
 
+.devTeam {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.devTeam__header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.devTeam__header h3 {
+  font-weight: 200;
+  font-size: 24px;
+}
+.devTeam__list {
+  width: inherit;
+  height: inherit;
+}
+.devTeam__person {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+}
+.devTeam__Frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  background: #17A471;
+  color: #f4f4f4;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 200;
+}
+.devTeam__Frame:nth-child(2) {
+  background: #137753 !important;
+  font-weight: 200;
+}
+
 .navigation {
   position: fixed;
   top: 0;
@@ -622,6 +662,14 @@ body {
   .aboutProject__desc {
     font-size: 14px;
     max-width: 310px;
+  }
+}
+@media (max-width: 465px) {
+  .devTeam {
+    width: 300px;
+  }
+  .devTeam__person {
+    height: 90px;
   }
 }
 /*# sourceMappingURL=main.css.map */

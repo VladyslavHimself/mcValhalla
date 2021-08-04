@@ -174,3 +174,13 @@
     }
 }
 
+// Team
+
+@media (max-width: 465px) {
+    .devTeam {
+        width: 300px;
+        &__person {
+            height: 90px;
+        }
+    }
+}

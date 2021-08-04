@@ -16,7 +16,7 @@ html(lang="en")
                 .navigation__close
                     img(src="../dist/assets/close.svg", alt="", srcset="")
                 .navigation__list     
-                    a(href="#")
+                    a(href="home.html")
                         .navigation__item Home
                     a(href="about.html")
                         .navigation__item About
@@ -34,39 +34,13 @@ html(lang="en")
                 include includes/_burger.pug
 
             .main
-                .heading
-                    h2 Welcome, Friend!
-                
-                .informationRow
-                    .monitoring
 
-                        .infoBlock
-                            .infoBlock__title Servers
-                            
-                            .server
-                                .server__name TeaParty
-                                
-                                .progressBar
-                                    .progressBar__active
-                                    .progressBar__overall
-                                
-                                .serverStat
-                                    .serverStat__active 12
-                                    .serverStat__hyphen /
-                                    .serverStat__overall 40
-                            
-                        .infoBlock
-                            .infoBlock__title About Valhalla
+                .htoPlay
+                    .htoPlay__steps
+                        .htoPlay__step
+                            .htoPlay__number 1
+                            .htoPlay__text Lorem ipsum dolor sit.
 
-                            .infoBlock__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit atque distinctio aliquid voluptas nemo numquam fuga qui, facilis provident iusto ipsam molestiae quam sapiente reiciendis, quidem veniam! Dolorum nemo maiores dolorem voluptatem corporis nisi optio?
-
-                            .infoBlock__image
-                                img(src="../dist/assets/viking.png", alt="", srcset="")
-
-                .playButton
-                    .playButton__content
-                        a(href="#").button.button-alternate#btnText Start play on Teaparty
-                        .playButton__description mc.teaparty.fun
 
 
             
